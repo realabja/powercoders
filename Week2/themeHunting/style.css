@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben&family=Mulish:wght@300&display=swap');
+:root{
+    --font1: 'Corben', serif;
+    --font2: 'Mulish', sans-serif;   
+}
+*:not(head){
+    background-color: #252530;
+    color: #ebebeb;
+    font-family: 'Mulish', sans-serif;
+    display: inherit;
+    margin: 0px;
+    padding: 0px;
+    /* vertical-align: inherit; */
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* z-index: 0; */
+}
+p, h1, h2, h3, h4{
+    background: none;
+}
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo h1{
+    font-family: var(--font1);
+    font-weight: 800;
+    margin: 0;
+    height: max-content;
+
+}
+nav{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav > ul{
+    justify-content: space-evenly   ;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+}
+a{
+    text-decoration: none   ;
+}
+main{
+    margin: 30px;
+}
+
+.topMain{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+}
+.tile{ 
+    align-items: center;
+    position: relative;
+    z-index: 1 ;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 9px;
+    box-sizing: border-box ;
+    border: 2px solid black;
+    height: 50vh;
+    margin: 5px;
+    
+    width: 45vw;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tileImg{
+    position: absolute;
+    z-index: -1; 
+    max-width: 120%;
+    max-width: 120%;
+}
+.smallTile{
+    align-items: center;
+    height: 48%;
+    width: 48%;
+    border:   2px solid black;
+    overflow: hidden;
+    flex-direction: column;
+    margin: auto;
+}
+.row{
+    flex-direction: row;
+    
+}
