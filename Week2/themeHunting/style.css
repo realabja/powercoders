@@ -1,33 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Corben&family=Mulish:wght@300&display=swap');
+
+
+/* resetting and defining global variables/styles */
+/* resetting and defining global variables/styles */
+/* resetting and defining global variables/styles */
+/* resetting and defining global variables/styles */
+
+
 :root{
     --font1: 'Corben', serif;
     --font2: 'Mulish', sans-serif;   
 }
+
 *:not(head){
     color: #ebebeb;
     font-family: 'Mulish', sans-serif;
     margin: 0px;
     padding: 0px;
+    /* box-sizing: border-box; */
 }
+
 body{
     background-color: #252530;
     margin: 0px;
     padding: 0px;
-    width: 100vw;
-
 }
-/* p, h1, h2, h3, h4{
-    background: none;
-} */
+
+a{
+    text-decoration: none   ;
+}
+
+/* resetting and defining global variables/styles */
+/* resetting and defining global variables/styles */
+/* resetting and defining global variables/styles */
+/* resetting and defining global variables/styles */
+
+
+/* start of the Header/Navbar */
+/* start of the Header/Navbar */
+/* start of the Header/Navbar */
+/* start of the Header/Navbar */
+
+
 header{
     padding: 30px;
 }
+
 header, header>*, header>*>*{
-    /* padding: 30px; */
     display: flex;
     justify-content: space-between;
 }
+
 .logo h1{
     font-family: var(--font1);
     font-weight: 800;
@@ -35,11 +59,13 @@ header, header>*, header>*>*{
     height: max-content;
 
 }
+
 nav{
     width: 50%;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 nav > ul{
     justify-content: space-evenly   ;
     vertical-align: middle;
@@ -49,48 +75,48 @@ nav > ul{
     font-weight: 600;
     list-style-type: none;
 }
-li{
-    
-}
-a{
-    text-decoration: none   ;
-}
+
+
+/* end of the Header/Navbar */
+/* end of the Header/Navbar */
+/* end of the Header/Navbar */
+/* end of the Header/Navbar */
+
+
+
+
+/* start of the main content styling  */
+/* start of the main content styling  */
+/* start of the main content styling  */
+/* start of the main content styling  */
+
+
 main{
-    margin: 30px;
-    
+    margin: 30px;    
 }
+
 .grid{
-    overflow: hidden;
     display: grid;
     gap: 2rem;
-    /* overflow: ; */
-    /* grid-template-columns: repeat(6, 1fr); */
-    /* grid-template-columns: repeat(6, minmax(400px, fr)); */
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
-small{
-    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
 
-}
-.grid>*:last-child {
-    /* grid-column: span ; */
-    grid-auto-flow: dense
-}
-.flex{
-    flex-direction: row;
-    display:flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-
-}
 .topMain{
     position: relative;
     flex-wrap: wrap;
     position: relative;
     box-sizing: border-box;
 }
+
+.flex{
+    flex-direction: row;
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
 .tile{
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-grow: 1;
     min-width: 250px;
@@ -105,6 +131,7 @@ small{
     overflow: hidden;
     align-items: center;
 }
+
 .tileImg{
     position: absolute;
     z-index: -1; 
@@ -112,6 +139,7 @@ small{
     height: 100%;
     object-fit: cover;
 }
+
 .smallTile{
     align-items: center;
     height: 48%;
@@ -121,6 +149,13 @@ small{
     flex-direction: column;
     margin: auto;
 }
+
 .row{
     flex-direction: row;
 }
+
+
+/* end of the main content styling  */
+/* end of the main content styling  */
+/* end of the main content styling  */
+/* end of the main content styling  */
