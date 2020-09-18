@@ -167,22 +167,22 @@ h3, h4{
     justify-content: center;
     flex-basis: 600px;
     box-shadow: rgba(3, 8, 20, 0.3) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.3) 0px 0.075rem 0.175rem;
-    /* box-shadow: rgba(255, 208, 0, 0.3) 0px 0.15rem 0.5rem, rgba(255, 208, 0, 0.4) 0px 0.075rem 0.175rem; */
-
-
 }
 
 .bigTile>p{
+    z-index: 2;
     font-size: 1em;
     padding-top: 0.5em;
     width: 95%;
 }
-.bigTile>h3{
+.bigTile>h2{
+    z-index: 2;
     width: 95%;
     margin-top: 20%;
 }
 
 .layer{
+    /* z-index: -1; */
     top: 0;
     left: 0;
     position: absolute;
@@ -192,8 +192,36 @@ h3, h4{
     border-radius: 9px;
     transition: opacity 0.6s ease-in-out;
 }
-.layer:hover{
-    opacity: 0;
+
+.imgLayer::before{
+    background-color: rgba(255, 208, 0, 0.705);
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.imgLayer{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    transition: transform 0.5s ease-in ;
+
+
+}
+.imgLayer:hover{
+    transform: scale(1.04);
+
 }
 
 .tileImg{
