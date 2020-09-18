@@ -98,6 +98,9 @@ main{
     margin: 30px;    
 }
 
+h3, h4{
+    font-family: var(--font1);
+}
 
         /* pinned posts section styling  */
         /* pinned posts section styling  */
@@ -128,7 +131,6 @@ main{
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
-    box-shadow: rgba(3, 8, 20, 0.2) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.2) 0px 0.075rem 0.175rem;
     position: relative;
     border-radius: 9px;
     box-sizing: border-box ;
@@ -138,6 +140,9 @@ main{
 }
 
 .smallTile{
+    text-align: center;
+    /* flex-direction: column; */
+    align-items: center;
     position: relative;
     box-shadow: rgba(3, 8, 20, 0.2) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.2) 0px 0.075rem 0.175rem;
     height: 45%;
@@ -148,29 +153,65 @@ main{
     margin: 0.7rem;
     border-radius: 9px;
 }
-
-.bigContainer{
+.smallTile>p{
+    padding-top: 0.5em;
+    width: 95%;
+}
+.smallTile>h3{
+    width: 95%;
+    margin-top: 20%;
+}
+.bigTile{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     flex-basis: 600px;
+    box-shadow: rgba(3, 8, 20, 0.3) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.3) 0px 0.075rem 0.175rem;
+    /* box-shadow: rgba(255, 208, 0, 0.3) 0px 0.15rem 0.5rem, rgba(255, 208, 0, 0.4) 0px 0.075rem 0.175rem; */
+
+
+}
+
+.bigTile>p{
+    font-size: 1em;
+    padding-top: 0.5em;
+    width: 95%;
+}
+.bigTile>h3{
+    width: 95%;
+    margin-top: 20%;
+}
+
+.layer{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    transition: opacity 0.6s ease-in-out;
+}
+.layer:hover{
+    opacity: 0;
 }
 
 .tileImg{
     z-index: -2; 
 }
+
 .colorful{
-    
+    z-index: -1;
 }
-.layer{
-    top: 0;
-    left: 0;
-    position: absolute;
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 9px;
+.yelloo{
+    background-color: rgba(255, 208, 0, 0.705);
 }
 
-@media screen and  (max-width: 1131px) and (min-width: 40px){
+.bluee{
+    background-color: rgba(70, 70, 201, 0.685);
+}
+
+@media screen and  (max-width: 1091px) and (min-width: 40px){
     .smallTile{
         flex-basis: auto;
         min-height: 40vh;
