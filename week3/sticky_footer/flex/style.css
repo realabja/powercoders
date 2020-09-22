@@ -27,6 +27,8 @@ article{
     margin: 3rem;
     flex-basis: 400px;
     min-height: 30vh;
+    background-color: yellow;
+
 
 }
 footer{
