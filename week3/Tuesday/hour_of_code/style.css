@@ -72,6 +72,8 @@ main{
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
 article{
+    /* align-items: center; */
+    text-align: center;
     background-color: gray;
     flex-basis: 450px;
     flex-grow: 1;
@@ -79,6 +81,11 @@ article{
     margin-left:1rem; 
     margin-right:1rem; 
     margin-top: 1rem;
+}
+article>img{
+    object-fit: cover;
+    height: 30vh;
+    margin: 1rem;
 }
 footer{
 
