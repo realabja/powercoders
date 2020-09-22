@@ -75,7 +75,10 @@ article{
     background-color: gray;
     flex-basis: 450px;
     flex-grow: 1;
-    height: ;
+    min-height: 40vh;
+    margin-left:1rem; 
+    margin-right:1rem; 
+    margin-top: 1rem;
 }
 footer{
 
