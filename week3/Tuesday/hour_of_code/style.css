@@ -56,7 +56,9 @@ header{
     background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
     background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
 }
-
+p{
+    margin: auto;
+}
 main{
     min-height: 90vh;
     flex-grow: 1;
