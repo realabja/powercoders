@@ -1,0 +1,4 @@
+Three main parts are input operation and output.
+I would use python to get input and check the format and store them in an array.
+Than I could use sort built in functions but where is the fun in that
+I will try to write quick sort and afterward pop and print them.
