@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 node_modules/
+=======
+.idea/
+venv/
+>>>>>>> 8c78595f01f3cb293c3385ec9f00c13ba5f37510
