@@ -1,0 +1,43 @@
+input :
+
+    current_age, age_of_reteirment
+
+process:
+
+    calculate the years left and the year of reteirement
+
+output:
+
+    output the years left and the year of reteirement
+
+============================================================================
+============================================================================
+
+constraints:
+    1. input should be positive number
+    2.age_of_reteirment should be only 2 digit
+
+============================================================================
+============================================================================
+
+pseudo code:
+
+****************************************************************************
+
+    1. prompt for the current_age and and age_of_reteirment and save in variables
+    
+    2. check if the inputs are positive numbers
+
+    3. calculate age_of_reteirment minus current_age and save it as total yearsleft in total
+
+    4. calculate years_left plus current year and save it as year_of_reteirement
+
+    5. if total is positive: output you have total years left to be retierd in year_of_reteirement
+        else if total is negative: output you have been - total years in reteirement since year_of_reteirement
+        else : output Congratulations you are retierd.
+
+    6. print output
+
+*****************************************************************************
+
+

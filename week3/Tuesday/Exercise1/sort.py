@@ -33,24 +33,36 @@ def quick_sort(array):
     if len(array) <= 1:
         return array
     else:
+        print(array)
         left = []
         right = []
-        new_array = []
         pivot = array.pop()
         length = len(array)
-
-        for i in range(length):
+        for i in range(length-1):
             d1 = array[i]
             d2 = pivot
             if d1 <= d2:
                 left.append(array[i])
             else:
                 right.append(array[i])
-        left = quick_sort(left)
-        left.append(pivot)
-        right = quick_sort(right)
+        print("-------------------------------------------------------")
+        print("before recursive call left")
         print(left)
+        left = quick_sort(left)
+        print(left)
+        print("after recursive call left")
+        print("-------------------------------------------------------")
+        left.append(pivot)
+        print("after adding pivot")
+        print(left)
+        print("right side")
+        print(right)
+
+        right = quick_sort(right)
         print(right)
         return left.append(right)
 
-main()
+
+a = [123,132,312,3213,212,31,23,12312,3,123,12,3,123,12,3,12,3,131,231,2312,312,3,12,312,312,3,123123,12,3,123,1,2312,312,3123,]
+
+quick_sort(a)
