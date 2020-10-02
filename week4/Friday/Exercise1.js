@@ -8,9 +8,10 @@ let dict ={
     adjective : "",
 }
 
+let template = `long, long time ago near a beatiful ${dict.noun} near some banana tree said: \"I will ${dict.verb} every tree that was not ${dict.adjective} enough while reading book ${dict.adverb}.\"`
  
-let wordPattern = /^[a-z]{1,16}/gi;
 
+let wordPattern = /^[a-z]{1,16}/gi;
 const isWord = (string) =>{
 
     let result = string.match(wordPattern);
@@ -28,13 +29,11 @@ const isWord = (string) =>{
 for (key in dict){
 
     dict[key] = prompt(`please enter one ${key}: `);
-    dict.key = dict[key] + "asd"
     while (!isWord(dict[key])){
         dict[key] = prompt(`please enter a valid word: `);
     }
-    console.log(dict.key)
     console.log(dict[key])
 }
+let template = `long, long time ago near a beatiful ${dict.noun} near some banana tree said: \"I will ${dict.verb} every tree that was not ${dict.adjective} enough while reading book ${dict.adverb}.\"`
 
-console.log(dict);
-
+console.log(template);
